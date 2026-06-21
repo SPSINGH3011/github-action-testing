@@ -17,5 +17,5 @@ jobs:
 
     steps:
 
-    - name: Hello
+    - name: Hello friends
       run: echo "Manual run"
