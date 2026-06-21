@@ -14,9 +14,9 @@ jobs:
   build:
 
     # runs-on: ubuntu-latest
-     runs-on: self-hosted
+      runs-on: self-hosted
 
-    steps:
+      steps:
 
-    - name: Hello friends
-      run: echo "Manual run"
+      - name: Hello friends
+        run: echo "Manual run"
