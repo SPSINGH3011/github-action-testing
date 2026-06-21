@@ -13,10 +13,16 @@ jobs:
 
   build:
 
-    # runs-on: ubuntu-latest
-      runs-on: self-hosted
+      runs-on: ubuntu-latest
+      # runs-on: self-hosted
 
       steps:
 
       - name: Hello friends
         run: echo "Manual run"
+
+      - name: PowerShell script
+        uses: Amadevus/pwsh-script@v2.0.3
+        with:
+          script: |
+                Write-Host "satya"
