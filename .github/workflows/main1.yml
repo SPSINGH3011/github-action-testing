@@ -15,6 +15,12 @@ jobs:
     runs-on: ubuntu-22.04
     
     steps:
+      - name: Check secret exists
+        run: |
+         echo "Client ID present"
+         echo ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+
+    
       - name: Azure login
         uses: azure/login@v3
         with:
